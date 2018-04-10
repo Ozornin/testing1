@@ -1,0 +1,7 @@
+{
+  "name": "js-test",
+  "version": "0.0.0",
+  "dependencies": {
+    "protractor": "5.3.1"
+  }
+}
