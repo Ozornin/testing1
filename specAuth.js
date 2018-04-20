@@ -1,6 +1,3 @@
-var webdriver = require('selenium-webdriver');
-
-
 describe('angularjs homepage todo list', function() {
     it('Auth', function() {
         browser.waitForAngularEnabled(false);
