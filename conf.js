@@ -1,7 +1,8 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['specAuth.js'],
-    capabilities: {
-        browserName: 'chrome'
-    }
+    framework: 'jasmine2',
+    multiCapabilities: [{
+      browserName: 'chrome'
+    }]
 }
