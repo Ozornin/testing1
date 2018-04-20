@@ -12,7 +12,6 @@ describe('angularjs homepage todo list', function() {
 
     it('Menu', function() {
       var h1 = $('td#content > h1');
-
       $('#box-apps-menu > li:first-child').click();
       expect(h1.isPresent()).toBe(true);
       $('#doc-logotype').click();
