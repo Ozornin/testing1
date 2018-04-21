@@ -1,5 +1,5 @@
 describe('angularjs homepage todo list', function() {
-  it('Auth', function () {
+  it('Stickers', function () {
     browser.waitForAngularEnabled(false);
     browser.get('http://localhost/litecart');
     var object = $$('li.product.column');
