@@ -8,6 +8,5 @@ describe('angularjs homepage todo list', function() {
       sticker = object.$$('div.sticker');
       expect(sticker.count()).toBe(1);
     });
-
   });
 });
