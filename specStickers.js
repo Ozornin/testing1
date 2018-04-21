@@ -3,8 +3,8 @@ describe('angularjs homepage todo list', function() {
     browser.waitForAngularEnabled(false);
     browser.get('http://localhost/litecart');
     var popular = $$('#box-most-popular li');
-    var campaigns = $$('box-campaigns');
-    var latest = $$('box-latest-products');
+    var campaigns = $$('#box-campaigns li');
+    var latest = $$('#box-latest-products li');
     var sticker;
     popular.each(function(object) {
       sticker = object.$$('div.sticker');
