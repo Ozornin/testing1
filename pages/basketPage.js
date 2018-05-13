@@ -25,36 +25,5 @@ module.exports = require('../common/Element.js').extend({
     return browser.wait(EC.visibilityOf(this.backBtn), 2000).then(() => {
       expect(this.backBtn.isPresent()).toBe(true);
     });
-  },
-  removeProducts() {
-    this.getCountShortCurts().then((count) => {
-      if(count == 3) {
-        this.waitRemoveBtn();
-        this.getOrderItemTitle().then((title) => {
-          this.clickRemoveBtn();
-          this.checkOrder(title);
-          this.waitRemoveBtn();
-          this.getOrderItemTitle().then((title) => {
-            this.clickRemoveBtn();
-            this.checkOrder(title);
-            this.waitRemoveBtn();
-            this.clickRemoveBtn();
-            this.checkBackBtn();
-          });
-        });
-      } else if(count == 2) {
-        this.waitRemoveBtn();
-        this.getOrderItemTitle().then((title) => {
-          this.clickRemoveBtn();
-          this.checkOrder(title);
-          this.waitRemoveBtn();
-          this.clickRemoveBtn();
-          this.checkBackBtn();
-        });
-      } else if(count == 1){
-        this.clickRemoveBtn();
-        this.checkBackBtn();
-      }
-    });
   }
 });
